@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegurar que el body ocupa toda la pantalla */
+    margin: 0; /* Eliminar márgenes predeterminados del body */
+}
+
+.contenedor {
+    width: 400px; /* Ancho del contenedor */
+    /* height: 400px;  Si quieres una altura fija, descomenta esta línea */
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white; /* Color de fondo del contenedor (opcional) */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos del formulario verticalmente */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Ajusta el ancho para tener en cuenta el padding y el border */
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="button"] {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Color de fondo del resultado (opcional) */
+}
